@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.IO.Pipes;
+
+namespace Demo
 {   
     // Step 0: Delegate Declaration
     public delegate int StringFuncDelegate(string str);
@@ -110,7 +112,21 @@
             ////--------------
             //Action<string> action = SomeFunction.Print;
             //action("khaled");
-           
+
+            #endregion
+            #region 8- Anonymous Method and Lambada Expression
+            // c#02
+            // Anonymous Function
+            Predicate<int> predicate =  delegate(int Number) { return Number > 0; }
+;
+            predicate.Invoke(10);
+            //-----------------
+            //Lambada Expression
+            Func<int, string> func =     Name=> Name.ToString();
+            func(10);// Syntax Suger
+            //--------------
+            Action<string> action =     Name=> Console.WriteLine($" hiiii {Name}");
+            action("khaled");
             #endregion
         }
     }

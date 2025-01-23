@@ -117,16 +117,61 @@ namespace Demo
             #region 8- Anonymous Method and Lambada Expression
             // c#02
             // Anonymous Function
-            Predicate<int> predicate =  delegate(int Number) { return Number > 0; }
-;
-            predicate.Invoke(10);
-            //-----------------
-            //Lambada Expression
-            Func<int, string> func =     Name=> Name.ToString();
-            func(10);// Syntax Suger
-            //--------------
-            Action<string> action =     Name=> Console.WriteLine($" hiiii {Name}");
-            action("khaled");
+//            Predicate<int> predicate =  delegate(int Number) { return Number > 0; }
+//;
+//            predicate.Invoke(10);
+//            //-----------------
+//            //Lambada Expression
+//            Func<int, string> func =     Name=> Name.ToString();
+//            func(10);// Syntax Suger
+//            //--------------
+//            Action<string> action =     Name=> Console.WriteLine($" hiiii {Name}");
+//            action("khaled");
+            #endregion
+            #region 9- Var Vs Dynamic
+
+            #region Var
+            //// Implictly Type Local Variable
+            //string x = "khaled";
+            //var y = "wagdy";//Implictly Type
+            //// compiler will Detect The DataType Of Variable At Compilation Time
+            //// Based On It Intial Value
+            //// var z = null;// Error
+            //// var can not Be Intialize With null
+            //x = null;
+            //// After Intializetion With Var You Can't Change Varible DataType
+            //var h;//Error 
+            #endregion
+            #region Dynamic
+            //dynamic x = "khaled";
+            //// clr Will DataType Of varible At RunTime
+
+            //dynamic y; // Valid
+            //// Can Declare varible with Dynamic Without Intilization
+
+            //dynamic z = null;
+            //// Can Be Intilized With Null
+
+            //x = 2;
+            //// After Intilization You Can Change DataType OF Varible
+            //x= true;
+            //x = 2.5;
+            //x = 'K';
+            #endregion
+            #region Vs
+            // Can Not Use Var Parameter Or Return Type Or Attribute At Class
+            // We Use Only To Declare Local Variable
+
+            //for (var i = 0; i < 5; i++) { }
+            //foreach (var item in args) { }
+
+            // Var Is Recommended
+            // 1- Errors => Compilation Time
+            // var x = null;
+            //dynamic y = null;
+            //Console.WriteLine(y); // Exption
+
+            #endregion
             #endregion
         }
     }

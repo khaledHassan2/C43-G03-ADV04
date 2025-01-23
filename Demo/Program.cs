@@ -9,7 +9,7 @@
     // 3- But these fun Must Have The Same Signature Of The Delegate 
     // 4- Regardless Fu Access Modifier Name (Fun Parametrs, Return Type) 
     #endregion
-    public delegate bool SptrtingTypesFunDelegate(int arg1,int arg2);
+    public delegate bool SptrtingTypesFunDelegate<T>(T arg1,T arg2);
     internal class Program
     {
         static void Main(string[] args)
@@ -45,6 +45,16 @@
             //SortingAlgorithms.BubbleSort(Num,stFunc);
 
             //foreach (var item in Num)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region 3- Delegate EX2 (with Genarics)
+            //string[] Names = { "khaled", "Ali", "Mostafa" };
+            //SptrtingTypesFunDelegate<string> stFunc = SortingTypes.SortDes;
+
+            //SortingAlgorithms<string>.BubbleSort(Names, stFunc);
+            //foreach (var item in Names)
             //{
             //    Console.WriteLine(item);
             //}

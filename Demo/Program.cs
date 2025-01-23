@@ -59,6 +59,28 @@
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region 4- Delegate EX3 (withOut Genarics)
+            //List<int> Numbers = Enumerable.Range(0, 100).ToList();
+            //List<int> OddNumbers=Helper.FindOddNumbers(Numbers);
+            //List<int> EvenNumbers = Helper.FindEvenNumbers(Numbers);
+
+            //foreach (var item in EvenNumbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //-----------------------------------
+            //List<int> Numbers = Enumerable.Range(0, 100).ToList();
+            //List<int> OddNumbers = Helper.FindNumbers(Numbers,ConditionFunctions.CheckOdd);
+            //List<int> EvenNumbers = Helper.FindNumbers(Numbers,ConditionFunctions.CheckEven);
+
+            //foreach (var item in EvenNumbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region MyRegion
+
+            #endregion
         }
     }
 }

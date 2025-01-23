@@ -50,10 +50,10 @@
             //}
             #endregion
             #region 3- Delegate EX2 (with Genarics)
-            //string[] Names = { "khaled", "Ali", "Mostafa" };
+            string[] Names = { "khaled", "Ali", "Mostafa" };
             //SptrtingTypesFunDelegate<string> stFunc = SortingTypes.SortDes;
-
-            //SortingAlgorithms<string>.BubbleSort(Names, stFunc);
+            //Func<string,string,bool> ComberFunc= SortingTypes.SortDes;
+            //SortingAlgorithms<string>.BubbleSort(Names, ComberFunc);
             //foreach (var item in Names)
             //{
             //    Console.WriteLine(item);
@@ -61,8 +61,11 @@
             #endregion
             #region 4- Delegate EX3 (withOut Genarics)
             //List<int> Numbers = Enumerable.Range(0, 100).ToList();
-            //List<int> OddNumbers=Helper.FindOddNumbers(Numbers);
-            //List<int> EvenNumbers = Helper.FindEvenNumbers(Numbers);
+            //Predicate<int> conFunDelOdd = ConditionFunctions.CheckOdd;
+            //Predicate<int> conFunDelEven = ConditionFunctions.CheckEven;
+
+            //List<int> OddNumbers = Helper.FindNumbers(Numbers, conFunDelOdd);
+            //List<int> EvenNumbers = Helper.FindNumbers(Numbers,conFunDelEven);
 
             //foreach (var item in EvenNumbers)
             //{
@@ -87,8 +90,15 @@
             //}
 
             #endregion
-            #region MyRegion
+            #region 6- Built IN Delegate [Func,Predicate,Action]
+            // 1- Predicate
+            // Can refer To fun That Take One Parameter And Return bool
 
+            // 2- Func 
+            //Can refer To fun That Take [0-16] Parameter And Return Value
+
+            //3-Action
+            //Can refer To fun That Take [0-16] Parameter And Be Void
             #endregion
         }
     }

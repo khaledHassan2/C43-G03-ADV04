@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace Demo
 {
     // public delegate bool ConFuncDelegate(int obj);
-     public delegate bool ConFuncDelegate<T>(T obj);
+    // public delegate bool ConFuncDelegate<T>(T obj);
 
     internal class Helper
     {
-        public static List<T> FindNumbers<T>(List<T> numbers,ConFuncDelegate<T> con)
+        public static List<T> FindNumbers<T>(List<T> numbers,Predicate<T> con)
         {
             List<T> Result = new List<T>();
             if (numbers is not null &&con is not null)

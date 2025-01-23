@@ -40,7 +40,7 @@ namespace Demo
         //        }
         //    }
         //}
-        public static void BubbleSort(T[] array, SptrtingTypesFunDelegate<T> StFunc)
+        public static void BubbleSort(T[] array, Func<T,T,bool> StFunc)
         {
             if (array is not null /*&&StFunc is not null*/)
             {

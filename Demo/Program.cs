@@ -78,6 +78,15 @@
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region 5- Delegate EX3 (with Genarics)
+            //List<string> Names = new List<string>() { "khaled","Wagdy","Mostafa","Ali"};
+            //List<string> StrResult =Helper.FindNumbers(Names, ConditionFunctions.CheckString);
+            //foreach (var item in StrResult)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
             #region MyRegion
 
             #endregion

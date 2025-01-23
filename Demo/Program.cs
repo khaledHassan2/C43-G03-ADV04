@@ -50,7 +50,7 @@
             //}
             #endregion
             #region 3- Delegate EX2 (with Genarics)
-            string[] Names = { "khaled", "Ali", "Mostafa" };
+            //string[] Names = { "khaled", "Ali", "Mostafa" };
             //SptrtingTypesFunDelegate<string> stFunc = SortingTypes.SortDes;
             //Func<string,string,bool> ComberFunc= SortingTypes.SortDes;
             //SortingAlgorithms<string>.BubbleSort(Names, ComberFunc);
@@ -82,8 +82,9 @@
             //}
             #endregion
             #region 5- Delegate EX3 (with Genarics)
-            //List<string> Names = new List<string>() { "khaled","Wagdy","Mostafa","Ali"};
-            //List<string> StrResult =Helper.FindNumbers(Names, ConditionFunctions.CheckString);
+            //List<string> Names = new List<string>() { "khaled", "Wagdy", "Mostafa", "Ali" };
+            //Predicate<string> prd = ConditionFunctions.CheckString;
+            //List<string> StrResult = Helper.FindNumbers(Names, prd);
             //foreach (var item in StrResult)
             //{
             //    Console.WriteLine(item);
@@ -99,6 +100,17 @@
 
             //3-Action
             //Can refer To fun That Take [0-16] Parameter And Be Void
+            #endregion
+            #region 7- Built IN Delegate Coutinue
+            //Predicate<int> predicate = SomeFunction.Test;
+            //predicate.Invoke(10);
+            ////-----------------
+            //Func<int, string> func = SomeFunction.Case;
+            //    func(10);
+            ////--------------
+            //Action<string> action = SomeFunction.Print;
+            //action("khaled");
+           
             #endregion
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    internal class Book
+    public class Book
     {
         public string ISBN { get; set; }
         public string Title { get; set; }
